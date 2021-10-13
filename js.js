@@ -9,3 +9,11 @@ function flip() {
 function unflip() {
     $('.flip-card-inner').removeClass('flipped')
 }
+
+function bubble(){
+    $('.bubble').removeClass('hide')
+}
+
+function bubblehide() {
+    $('.bubble').addClass('hide')
+}
