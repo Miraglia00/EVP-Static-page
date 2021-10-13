@@ -53,3 +53,7 @@ html, body {
     color: white;
     transform: rotateY(180deg);
   }
+
+  .cursor {
+    cursor: pointer;
+  }
