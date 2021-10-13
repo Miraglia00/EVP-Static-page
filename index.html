@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" href="rakastulcsordulas.png">
+    <title>EVP - Beadadó</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+</head>
+
+<body class="bg-secondary d-flex h-100 text-center">
+    <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+        <header>
+            <nav class="navbar navbar-light bg-dark text-light shadow-lg">
+                <div class="container-fluid justify-content-evenly">
+                    <img src="rakastulcsordulas.png" style="max-height: 100px;" />
+                    <h2>EVP - Beadandó</h2>
+                    </h1>
+                </div>
+            </nav>
+        </header>
+
+        <main class="d-flex flex-fill justify-content-center align-items-center">
+            <content class="d-none d-md-block">
+                <div class="flip-card shadow-lg">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-dark">
+                            <div class="col-12 h-100">
+                                <div class="d-flex justify-content-end m-2">
+                                    <button type="button" class="btn btn-outline-light mt-auto" onclick="flip()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center align-items-center h-100">
+                                    <img src="cinemapp.png" alt="Avatar" style="width:300px;height:300px;">
+                                    <h1 class="text-light">CinemApp</h1>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="flip-card-back bg-secondary">
+                            <div class="col-12 h-100">
+                                <div class="d-flex justify-content-start m-2">
+                                    <button type="button" class="btn btn-outline-light mt-auto" onclick="unflip()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-8">
+                                        <h5 class="text-light">Linkek:</h5>
+                                        <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                                            onclick="redirect('https://docs.google.com/document/d/1di8uI8UEztxH7dAJQUhqwGSRbmnLAspvJy_8Stlid9E/')">
+                                            📓 Megrendelési jegyzőkönyv
+                                        </button>
+                                        <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                                            onclick="redirect('https://docs.google.com/presentation/d/1EnTSt9BfDrkwBCFoFeUjZRmij6mEFXaZ/edit#slide=id.p1')">
+                                            📽 Bemutató PPT
+                                        </button>
+                                        <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                                            onclick="redirect('https://drive.google.com/file/d/1-KsExjVB1VPW_fG6Kqj7P36pAkqINDFn/view?usp=sharing')">
+                                            🕹 Use Case Diagram
+                                        </button>
+                                        <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                                            onclick="redirect('https://drive.google.com/file/d/1jzKugy_xbU_grSCYaU0pJmy7zw5_Z6FD/view')">
+                                            💻 UI Mockup
+                                        </button>
+                                        <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                                            onclick="redirect('https://docs.google.com/document/d/1o6ezy52--X3ziTpvVy_yXtGEoYT0JsRQ8xjCRltsVmo/edit?usp=sharing')">
+                                            📑 User Story
+                                        </button>
+
+                                        <button type="button" class="btn btn-dark m-4" onclick="redirect('https://github.com/RakasTulcsordulas/EVP-2021')">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                                class="bi bi-github" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </content>
+
+            <svg width="1900" height="281"><g transform="translate(250,70)"><g id="g_title"><text x="-250" y="-33" class="subheading">2021.9.10. 2:00:00 - 2022.1.1. 1:00:00</text><g id="g_legend" transform="translate(20,-12)"><rect x="1570" y="-50" height="15" width="15" class="rect_has_data"></rect><text x="1590" y="-41.5" class="legend">On time</text><rect x="1570" y="-33" height="15" width="15" class="rect_has_no_data"></rect><text x="1590" y="-24.5" class="legend">Late</text></g></g><g id="g_axis"><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/2" xlink:show="new"><text x="-250" y="23" transform="translate(0,0)" class="ytitle">User report and expectations</text></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/4" xlink:show="new"><text x="-250" y="23" transform="translate(0,32)" class="ytitle">PPT, Use Case Diagram, User Story</text></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/3" xlink:show="new"><text x="-250" y="23" transform="translate(0,64)" class="ytitle">Project webpage creation</text></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/5" xlink:show="new"><text x="-250" y="23" transform="translate(0,96)" class="ytitle">Setup GitHub</text></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/6" xlink:show="new"><text x="-250" y="23" transform="translate(0,128)" class="ytitle">Make Gantt Diagram</text></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/1" xlink:show="new"><text x="-250" y="23" transform="translate(0,160)" class="ytitle">Uploading documents to webpage</text></a><line class="vert_grid" x1="27.64749262536873" x2="27.64749262536873" y1="0" y2="201"></line><line class="vert_grid" x1="128.62094395280238" x2="128.62094395280238" y1="0" y2="201"></line><line class="vert_grid" x1="229.59439528023597" x2="229.59439528023597" y1="0" y2="201"></line><line class="vert_grid" x1="330.5678466076696" x2="330.5678466076696" y1="0" y2="201"></line><line class="vert_grid" x1="431.5412979351032" x2="431.5412979351032" y1="0" y2="201"></line><line class="vert_grid" x1="532.514749262537" x2="532.514749262537" y1="0" y2="201"></line><line class="vert_grid" x1="633.4882005899706" x2="633.4882005899706" y1="0" y2="201"></line><line class="vert_grid" x1="734.4616519174041" x2="734.4616519174041" y1="0" y2="201"></line><line class="vert_grid" x1="836.0361356932153" x2="836.0361356932153" y1="0" y2="201"></line><line class="vert_grid" x1="937.009587020649" x2="937.009587020649" y1="0" y2="201"></line><line class="vert_grid" x1="1037.9830383480826" x2="1037.9830383480826" y1="0" y2="201"></line><line class="vert_grid" x1="1138.9564896755162" x2="1138.9564896755162" y1="0" y2="201"></line><line class="vert_grid" x1="1239.9299410029498" x2="1239.9299410029498" y1="0" y2="201"></line><line class="vert_grid" x1="1340.9033923303834" x2="1340.9033923303834" y1="0" y2="201"></line><line class="vert_grid" x1="1441.876843657817" x2="1441.876843657817" y1="0" y2="201"></line><line class="vert_grid" x1="1542.8502949852507" x2="1542.8502949852507" y1="0" y2="201"></line><line class="horz_grid" x1="0" x2="1630" y1="23" y2="23"></line><line class="horz_grid" x1="0" x2="1630" y1="55" y2="55"></line><line class="horz_grid" x1="0" x2="1630" y1="87" y2="87"></line><line class="horz_grid" x1="0" x2="1630" y1="119" y2="119"></line><line class="horz_grid" x1="0" x2="1630" y1="151" y2="151"></line><line class="horz_grid" x1="0" x2="1630" y1="183" y2="183"></line><g class="axis"><g class="tick" transform="translate(27.64749262536873,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Sep 12</text></g><g class="tick" transform="translate(128.62094395280238,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Sep 19</text></g><g class="tick" transform="translate(229.59439528023597,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Sep 26</text></g><g class="tick" transform="translate(330.5678466076696,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Oct 03</text></g><g class="tick" transform="translate(431.5412979351032,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Oct 10</text></g><g class="tick" transform="translate(532.514749262537,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Oct 17</text></g><g class="tick" transform="translate(633.4882005899706,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Oct 24</text></g><g class="tick" transform="translate(734.4616519174041,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Oct 31</text></g><g class="tick" transform="translate(836.0361356932153,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Nov 07</text></g><g class="tick" transform="translate(937.009587020649,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Nov 14</text></g><g class="tick" transform="translate(1037.9830383480826,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Nov 21</text></g><g class="tick" transform="translate(1138.9564896755162,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Nov 28</text></g><g class="tick" transform="translate(1239.9299410029498,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Dec 05</text></g><g class="tick" transform="translate(1340.9033923303834,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Dec 12</text></g><g class="tick" transform="translate(1441.876843657817,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Dec 19</text></g><g class="tick" transform="translate(1542.8502949852507,0)" style="opacity: 1;"><line y2="-6" x2="0"></line><text dy="0em" y="-9" x="0" style="text-anchor: middle;">Dec 26</text></g><path class="domain" d="M0,-6V0H1630V-6"></path></g><line class="vert_grid_today" stroke-dasharray="10, 5" x1="474.8156342182891" x2="474.8156342182891" y1="0" y2="201"></line></g><g id="g_data"><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/2" xlink:show="new"><g transform="translate(0,0)" class="dataset"><rect x="100.97345132743362" y="14" width="100.97345132743362" height="18" class="rect_has_no_data"></rect></g></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/4" xlink:show="new"><g transform="translate(0,32)" class="dataset"><rect x="201.94690265486724" y="14" width="100.97345132743368" height="18" class="rect_has_no_data"></rect></g></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/3" xlink:show="new"><g transform="translate(0,64)" class="dataset"><rect x="201.94690265486724" y="14" width="100.97345132743368" height="18" class="rect_has_no_data"></rect></g></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/5" xlink:show="new"><g transform="translate(0,96)" class="dataset"><rect x="302.9203539823009" y="14" width="100.97345132743357" height="18" class="rect_has_no_data"></rect></g></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/6" xlink:show="new"><g transform="translate(0,128)" class="dataset"><rect x="403.8938053097345" y="14" width="100.97345132743362" height="18" class="rect_has_data"></rect></g></a><a xlink:href="https://github.com/RakasTulcsordulas/EVP-2021/issues/1" xlink:show="new"><g transform="translate(0,160)" class="dataset"><rect x="0" y="14" width="1630" height="18" class="rect_has_data"></rect></g></a></g></g></svg>
+
+            <content class="d-block d-md-none container">
+                <button type="button" class="btn btn-dark m-4" onclick="redirect('https://github.com/RakasTulcsordulas/EVP-2021')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                </button>
+
+                <h5 class="text-light">Linkek:</h5>
+                <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                    onclick="redirect('https://docs.google.com/document/d/1di8uI8UEztxH7dAJQUhqwGSRbmnLAspvJy_8Stlid9E/')">
+                    📓 Megrendelési jegyzőkönyv
+                </button>
+                <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                    onclick="redirect('https://docs.google.com/presentation/d/1EnTSt9BfDrkwBCFoFeUjZRmij6mEFXaZ/edit#slide=id.p1')">
+                    📽 Bemutató PPT
+                </button>
+                <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                    onclick="redirect('https://drive.google.com/file/d/1-KsExjVB1VPW_fG6Kqj7P36pAkqINDFn/view?usp=sharing')">
+                    🕹 Use Case Diagram
+                </button>
+                <button type="button" class="btn btn-dark w-100 mb-3 text-light"
+                    onclick="redirect('https://drive.google.com/file/d/1jzKugy_xbU_grSCYaU0pJmy7zw5_Z6FD/view')">
+                    💻 UI Mockup
+                </button>
+                <button type="button" class="btn btn-dark w-100 mb-3 text-light" onclick="redirect('https://docs.google.com/document/d/1o6ezy52--X3ziTpvVy_yXtGEoYT0JsRQ8xjCRltsVmo/edit?usp=sharing')">
+                    📑 User Story
+                </button>
+            </content>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
