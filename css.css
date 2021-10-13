@@ -1,7 +1,10 @@
 html, body {
     font-family: 'Fira Sans', sans-serif;
     height: 100%;
-    overflow: hidden;
+}
+
+.cover-container {
+  height: 100%;
 }
 
 .click:hover{
@@ -11,7 +14,7 @@ html, body {
 .flip-card {
     background-color: transparent;
     width: 600px;
-    height: 600px;
+    height: 700px;
     border: 1px solid #f1f1f1;
     border-radius: 5px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
